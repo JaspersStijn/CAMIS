@@ -1,5 +1,5 @@
 ---
-title: "R vs SAS One Sample T-Test"
+title: "R vs SAS Binomtest"
 ---
 
 ```{r}
@@ -14,7 +14,7 @@ library(procs)
 The following table shows the types of One Sample t-test analysis, the capabilities of each language, and whether or not the results from each language match.
 
 | Analysis                          | Supported in R                             | Supported in SAS                           | Results Match    | Notes                                                                             |
-|-----------------------------------|--------------------------------------------|--------------------------------------------|------------------|-----------------------------------------------------------------------------------|
+|---------------|---------------|---------------|---------------|---------------|
 | One sample t-test, normal data    | [Yes](../R/ttest_1Sample.html#normal)      | [Yes](../SAS/ttest_1Sample.html#normal)    | [Yes](#normal)   | In Base R, use `mu` parameter on `t.test()` function to set null hypothesis value |
 | One sample t-test, lognormal data | [Maybe](../R/ttest_1Sample.html#lognormal) | [Yes](../SAS/ttest_1Sample.html#lognormal) | [NA](#lognormal) | May be supported by **envstats** package                                          |
 
